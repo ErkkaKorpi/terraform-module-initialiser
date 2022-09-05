@@ -15,8 +15,8 @@ func TestCreateTerraformFiles(t *testing.T) {
 		log.Fatal(err)
 	}
 
-	if len(files) != 3 {
-		t.Error("Want 3, got: ", len(files))
+	if len(files) != 4 {
+		t.Error("Want 4, got: ", len(files))
 	}
 	t.Cleanup(func() {
 		if err := os.RemoveAll("test"); err != nil {
