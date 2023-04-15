@@ -11,7 +11,7 @@ func CreateTerraformFiles(path string) {
 			panic(err)
 		}
 	}
-	for _, file := range []string{"main.tf", "varialbles.tf", "outputs.tf", "README.md"} {
+	for _, file := range []string{"main.tf", "variables.tf", "outputs.tf", "README.md"} {
 		if _, err := os.Create(fmt.Sprintf("%s/%s", path, file)); err != nil {
 			panic(err)
 		}
